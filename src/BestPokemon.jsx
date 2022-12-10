@@ -1,5 +1,4 @@
 const BestPokemon = (props) => {
-  
   return (
     <div>
       <p>My favorite Pokemon is Squirtle</p>

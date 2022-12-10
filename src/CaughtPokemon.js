@@ -5,7 +5,7 @@ function CaughtPokemon(props) {
    const [pokemonNameInput, setPokemonNameInput] = useState("");
 function catchPokemon() {
   if(pokemonNameInput.length == 0){
-    return 
+    return;
   }
 setCaught([...caught, pokemonNameInput]);
 
@@ -14,7 +14,7 @@ setPokemonNameInput("");
 
 }
 function handleInputChange (e){
-setPokemonNameInput(e.target.value)
+setPokemonNameInput(e.target.value);
 }
 
   return (
@@ -31,6 +31,6 @@ setPokemonNameInput(e.target.value)
       <button onClick={catchPokemon}>Catch Pokemon</button>
     </div>
   );
-};
+}
 
 export default CaughtPokemon;
